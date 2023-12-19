@@ -1,5 +1,3 @@
-'use client';
-
 import clsx from 'clsx';
 import Link from "next/link";
 
@@ -12,12 +10,12 @@ interface DesktopItemProps {
 }
 
 const DesktopItem: React.FC<DesktopItemProps> = ({ 
-  label,   
+  label, 
   href, 
   icon: Icon, 
   active,
   onClick
-}) => {  
+}) => {
   const handleClick = () => {
     if (onClick) {
       return onClick();

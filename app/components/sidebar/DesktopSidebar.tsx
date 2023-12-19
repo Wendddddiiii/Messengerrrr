@@ -2,11 +2,10 @@
 
 import DesktopItem from "./DesktopItem";
 import useRoutes from "@/app/hooks/useRoutes";
+import SettingsModal from "./SettingsModal";
 import { useState } from "react";
 import Avatar from "../Avatar";
 import { User } from "@prisma/client";
-import SettingsModal from "./SettingsModal";
-
 
 interface DesktopSidebarProps {
   currentUser: User
@@ -48,7 +47,7 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({
                 label={item.label}
                 icon={item.icon}
                 active={item.active}
-                onClick={item.onclick}
+                onClick={item.onClick}
               />
             ))}
           </ul>
